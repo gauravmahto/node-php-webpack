@@ -1,5 +1,7 @@
-.main-container {
-  h1 {
-    color: red;
+.web-main-container {
+  &__header {
+    &--color-red {
+      color: red;
+    }
   }
 }
