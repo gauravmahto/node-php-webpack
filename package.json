@@ -1,0 +1,56 @@
+{
+    "name": "typescript-node-php-webpack",
+    "version": "1.0.0",
+    "description": "Test bed for TypeScript + Node.js + PHP + Webpack",
+    "main": "bin/server/app.js",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gauravmahto/node-php-webpack.git"
+    },
+    "scripts": {
+        "start-server-watch": "nodemon bin/server/app.js",
+        "server-compile-watch": "tsc -p src/server -w",
+        "client-compile-watch": "webpack --config webpack.config.js",
+        "server-compile": "tsc -p src/server"
+    },
+    "nodemonConfig": {
+        "watch": [
+            "bin/server"
+        ]
+    },
+    "author": "Gaurav",
+    "license": "ISC",
+    "dependencies": {
+        "app-module-path": "2.2.0",
+        "core-js": "2.5.1",
+        "express": "4.16.2",
+        "jquery": "3.2.1",
+        "lodash": "4.17.4",
+        "rxjs": "5.5.2"
+    },
+    "devDependencies": {
+        "@types/express": "4.0.39",
+        "@types/jquery": "3.2.13",
+        "@types/node": "8.0.51",
+        "awesome-typescript-loader": "3.3.0",
+        "clean-webpack-plugin": "0.1.17",
+        "css-loader": "0.28.7",
+        "extract-text-webpack-plugin": "3.0.2",
+        "html-loader": "0.5.1",
+        "html-webpack-plugin": "2.30.1",
+        "node-sass": "4.6.0",
+        "nodemon": "1.12.1",
+        "raw-loader": "0.5.1",
+        "sass-loader": "6.0.6",
+        "source-map-explorer": "1.5.0",
+        "style-loader": "0.19.0",
+        "stylelint-config-standard": "18.0.0",
+        "stylelint-order": "0.8.0",
+        "stylelint-scss": "2.2.0",
+        "stylelint-selector-bem-pattern": "^2.0.0",
+        "tslint": "5.8.0",
+        "typescript": "2.6.1",
+        "webpack": "3.6.0",
+        "webpack-merge": "4.1.0"
+    }
+}
