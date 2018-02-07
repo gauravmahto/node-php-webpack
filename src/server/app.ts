@@ -4,7 +4,7 @@
 
 import './globals';
 
-import * as express from 'express';
+import express from 'express';
 
 // Import ends.
 
